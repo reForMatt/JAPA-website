@@ -35,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 #home {
-  background: url('https://media.glassdoor.com/o/31/92/85/8c/mrak-hall.jpg') no-repeat center center fixed;
+  background: url('https://cloud.githubusercontent.com/assets/11418483/19407078/91ba4ada-924b-11e6-8520-34d0e392c68f.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
 }
@@ -51,7 +51,7 @@ font-family: 'Playfair Display', serif;
 font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 72px; 
-  color: #C99700;
+  color: #000000;
 }
 
 #portfolio {
