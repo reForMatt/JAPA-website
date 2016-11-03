@@ -1,162 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JAPA Parking</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-  <!-- Conversion from Matt's Portfolio -->
-      <!-- Fixed navbar -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="navbar.js" type="text/javascript"></script>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">JAPA</a>
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">JAPA</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Organizations</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+        <!-- /.container-fluid -->
     </nav>
-  
-  <!-- Home -->
-  <div id="home" class="container-fluid intro">
-      <div class="container">
-          <div class="col-xs-12">
-            <img src="https://cloud.githubusercontent.com/assets/11418483/19547400/8c27e76c-964c-11e6-89d2-bcac9f5da572.gif" />
-            <h5>Fixing parking for real people, in real-time.</h5>
-          </div>
-    </div>
-  </div>
-  
-  <div id="firstGap" class="container-fluid gap">
-  </div>
-  
-  <!-- About -->
-  <div id="about" class="container-fluid aboutme">
-      <div class="container">
-        <h1>ABOUT US</h1>
-        <div class="col-xs-4">
-            <div class="imgAbt"> <!-- TODO: zoom into image http://www.w3schools.com/howto/howto_css_modal_images.asp -->
-                <img width="330" height="330" src="https://cloud.githubusercontent.com/assets/11418483/19407188/003d8cbc-924f-11e6-9541-b10e5d97ab33.png" class="img-rounded" />
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">JAPA</h1>
+                <hr>
+                <p>Solving parking for real people, in real-time.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
-        <div class="col-xs-8">
-            <p>Finding parking is an everyday struggle for commuters and drivers worldwide. We intend to solve that, first in Davis California, by serving real-time parking availability to all our users. Purpose-built sensors are in development, and will be deployed out to parking lots around the Davis area. We will be coming out with an Android app first, however there are plans in place for an iOS port. We are currently in prototyping phase, but stay tuned for more news!</p>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Find parking spots in real-time!</h2>
+                    <hr class="light">
+                    <p class="text-faded">JAPA is Just Another Parking App, but we're here to be THE mobile parking app. We want to deliver real-time parking spot availability, straight to your phone.  We're hooking up parking spots with ultrasonic sensors and delivering it to your phone from the cloud. Stay tuned for the app and sensor rollouts, first coming to Android users at UC Davis!</p>
+                    <!-- <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a> -->
+                </div>
+            </div>
         </div>
-    </div>
-  </div>
-  
-  <!-- Associated
-  <div id="associates" class="container-fluid associate">
-    <div class="row">
-      <h1>Associated Organizations</h1>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <h4></h4>
-      </div>
-    </div>
-  </div> -->
-  
-  
-  
-  <!-- The Team -->
-  <div id="team" class="container-fluid portfolio">
-    <div class="row">
-      <h1>The Team</h1>
-    </div>
-    <div class="container">
-      
-      <!-- row 1 -->
-      <div class="row">
-        
-        <div class="col-md-4 portfolio-item">
-          <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-1/p160x160/12190001_10205635561155987_1703179631510752336_n.jpg?oh=fcd9ff5ec6d958f2505c3779cec0ce38&oe=58693BAC" class="img-rounded">
-          <div class="portfolio-caption">
-            <h4>Mathew Magno</h4>
-            <p class="text-muted">Business Development</p>
-            <p class="portfolio-description">Computer Science student. More bio to come soon.</p>
-          </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
         </div>
-          
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-car text-primary sr-icons"></i>
+                        <h3>Parking Made Easy</h3>
+                        <p class="text-muted">No-stress parking with our easy-to-use mobile app.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-clock-o text-primary sr-icons"></i>
+                        <h3>Real-time</h3>
+                        <p class="text-muted">Parking availability in real-time to park in no time at all!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-server text-primary sr-icons"></i>
+                        <h3>No-frills Tech</h3>
+                        <p class="text-muted">Straight from our servers to your phone. Simple.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-graduation-cap text-primary sr-icons"></i>
+                        <h3>For Students, By Students</h3>
+                        <p class="text-muted">We always have busy students and commuters in mind, because we <b>are</b> busy students and commuters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/ASUCD eFund.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/ASUCD eFund.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    ASUCD eFund
+                                </div>
+                                <div class="project-name">
+                                    Guidance, Education, and Funding
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/ESSC.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/ESSC.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Engineering Student Startup Center
+                                </div>
+                                <div class="project-name">
+                                    Education in ENG 002
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/venturewell.jpg" class="portfolio-box">
+                        <img src="img/portfolio/fullsize/venturewell.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    VentureWell
+                                </div>
+                                <div class="project-name">
+                                    Funding
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+<!--
+    <section id="team" class="team">
+        <div class="row team">
+            <h1>The Team</h1>
+        </div>
+        <div class="container"> 
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 team-item">
+                    <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-1/p160x160/12190001_10205635561155987_1703179631510752336_n.jpg?oh=fcd9ff5ec6d958f2505c3779cec0ce38&oe=58693BAC" class="img-rounded">
+                    <div class="team-caption">
+                        <h4>Mathew Magno</h4>
+                        <p class="text-muted">Business Development</p>
+                        <p class="portfolio-description">Computer Science student. More bio to come soon.</p>
+                    </div>
+                </div>
                 
-        <div class="col-md-4 portfolio-item">
-          <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/302474_125964540841548_283790382_n.jpg?oh=5de1168088c13b16fb6db2de46e75305&oe=58AAD9FF" class="img-rounded" >
-          <div class="portfolio-caption">
-            <h4>Charles Chen</h4>
-            <p class="text-muted">Lead Software Developer</p>
-            <p class="portfolio-description">Computer Science student. More bio to come soon.</p>
-          </div>
-        </div>
+                <div class="col-lg-4 col-sm-6 team-item">
+                    <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/302474_125964540841548_283790382_n.jpg?oh=5de1168088c13b16fb6db2de46e75305&oe=58AAD9FF" class="img-rounded" >
+                    <div class="team-caption">
+                        <h4>Charles Chen</h4>
+                        <p class="text-muted">Lead Software Developer</p>
+                        <p class="portfolio-description">Computer Science student. More bio to come soon.</p>
+                    </div>
+                </div>
           
-        <div class="col-md-4 portfolio-item">
-          <img width="320" height="320" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAd2AAAAJDJmNTk0MWIwLTAwNjEtNDFiMy1iMmQ5LWJlYmQ3OWRmM2FhNQ.jpg" class="img-rounded" >
-          <div class="portfolio-caption">
-            <h4>Matthew Kyawmyint</h4>
-            <p class="text-muted">Software and Web Developer</p>
-            <p class="portfolio-description">Computer Science student, previously interned at Intel Corp. Interested in: Web development, Networking, and Cryptography.</p>
-          </div>
+                <div class="col-lg-4 col-sm-6 team-item">
+                    <img width="320" height="320" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAd2AAAAJDJmNTk0MWIwLTAwNjEtNDFiMy1iMmQ5LWJlYmQ3OWRmM2FhNQ.jpg" class="img-rounded" >
+                    <div class="team-caption">
+                        <h4>Matthew Kyawmyint</h4>
+                        <p class="text-muted">Software and Web Developer</p>
+                        <p class="portfolio-description">Computer Science student, previously interned at Intel Corp. Interested in: Web development, Networking, and Cryptography.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-item">
+                    <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-1/p160x160/13669804_10154357590673420_3133775448240986457_n.jpg?oh=b7e3c409f81e92ece9ac7349d2ce133d&oe=58A6F29B" class="img-rounded" >
+                    <div class="team-caption">
+                        <h4>Zain Budhwani</h4>
+                        <p id="small-text" class="text-muted">Software Developer</p>
+                        <p class="portfolio-description">Computer Science student. More bio to come soon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-item">
+                    <img width="320" height="320" src="https://cloud.githubusercontent.com/assets/11418483/19542989/63159816-9628-11e6-9b51-db7eb486061f.jpg" class="img-rounded" >
+                    <div class="team-caption">
+                        <h4>Brian Gutierrez</h4>
+                        <p id="small-text" class="text-muted">Hardware Developer</p>
+                        <p class="portfolio-description">Mechanical Engineering student, intern at CLTC working on motion sensors. Interested in: design, development, and implementation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 team-item">
+                    <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/10689439_748984905149782_3865211882104432600_n.jpg?oh=1380d54689b39a7daab030fb6a22af48&oe=586BD339" class="img-rounded" >
+                    <div class="team-caption">
+                        <h4>Dave Jung</h4>
+                        <p id="small-text" class="text-muted">Hardware Developer</p>
+                        <p class="portfolio-description">Civil Engineering student. More bio to come.</p>
+                    </div>
+                </div>
+            </div>     
         </div>
-      
-      </div>
-        <!-- row 2 -->
-      <div class="row">
-        <div class="col-md-4 portfolio-item">
-            <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-1/p160x160/13669804_10154357590673420_3133775448240986457_n.jpg?oh=b7e3c409f81e92ece9ac7349d2ce133d&oe=58A6F29B" class="img-rounded" >
-          <div class="portfolio-caption">
-            <h4>Zain Budhwani</h4>
-            <p id="small-text" class="text-muted">Software Developer</p>
-            <p class="portfolio-description">Computer Science student. More bio to come soon.</p>
-          </div>
+    </section>
+-->
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download Coming Soon!</h2>
+                <a href="" class="btn btn-default btn-xl sr-button">Coming Soon</a>
+            </div>
         </div>
-        
-        
-        <div class="col-md-4 portfolio-item">
-          <img width="320" height="320" src="https://cloud.githubusercontent.com/assets/11418483/19542989/63159816-9628-11e6-9b51-db7eb486061f.jpg" class="img-rounded" >
-          <div class="portfolio-caption">
-            <h4>Brian Gutierrez</h4>
-            <p id="small-text" class="text-muted">Hardware Developer</p>
-            <p class="portfolio-description">Mechanical Engineering student, intern at CLTC working on motion sensors. Interested in: design, development, and implementation.</p>
-          </div>
+    </aside>
+    
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Us!</h2>
+                    <hr class="primary">
+                    <p>Are you a driver sick of cruising through lots trying to find parking? Or are you a parking lot owner interested in solving your parking issues? Let us know your thoughts, concerns, and question!</p>
+                </div>
+                <!-- <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>123-456-6789</p>
+                </div> -->
+                <div class="col-lg-4 col-lg-offset-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:contact@japa.one">contact@japa.one</a></p>
+                </div>
+            </div>
         </div>
-          
-        <div class="col-md-4 portfolio-item">
-          <img width="320" height="320" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/10689439_748984905149782_3865211882104432600_n.jpg?oh=1380d54689b39a7daab030fb6a22af48&oe=586BD339" class="img-rounded" >
-          <div class="portfolio-caption">
-            <h4>Dave Jung</h4>
-            <p id="small-text" class="text-muted">Hardware Developer</p>
-            <p class="portfolio-description">Civil Engineering student. More bio to come.</p>
-          </div>
-        </div>
-      </div>     
-    </div>
-  </div>
-  
-  
-  <!-- Contact me -->
-  <div id="contact" class="container-fluid contact">
-    <div class="container">
-      <h1>CONTACT US</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>Email us at: japa.parking@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
 </body>
+
+</html>
